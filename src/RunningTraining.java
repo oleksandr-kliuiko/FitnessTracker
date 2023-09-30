@@ -5,15 +5,16 @@ public class RunningTraining extends Workout {
         this.distance = distance;
     }
 
-    //public int getDistance() {
-    //    return distance;
-    //}
+    public int getDistance() {
+        return distance;
+    }
 
     @Override
     protected String Info() {
-        return "Бігове тренування!\tТривалість: "+getDuration()
-                +"\tДистанція: "+distance+"\tКілокалорій: "
-                +calorieConsumption(getWeight(), getDuration(), getAvgPulse());
+        return "Бігове тренування!\tТривалість в хв: "+getDuration()
+                +"\tДистанція в км: "+getDistance()+"\tКілокалорій: "
+                +calorieConsumption(getWeight(), getDuration(), getAvgPulse())
+                +"\nВага спортсмена: "+getWeight()+"\tСередній пульс за тренування: "+getAvgPulse()+"\n";
 
     }
 }

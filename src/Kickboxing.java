@@ -6,7 +6,8 @@ public class Kickboxing extends Workout {
 
     @Override
     protected String Info() {
-        return "Тренування з кікбоксингу\tТривалість: "+getDuration()
-                +"\tКілокалорій: "+calorieConsumption(getWeight(), getDuration(), getAvgPulse());
+        return "Тренування з кікбоксингу!\tТривалість в хв: "+getDuration()
+                +"\tКілокалорій: "+calorieConsumption(getWeight(), getDuration(), getAvgPulse())
+                +"\nВага спортсмена: "+getWeight()+"\tСередній пульс за тренування: "+getAvgPulse()+"\n";
     }
 }

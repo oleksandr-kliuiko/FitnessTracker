@@ -7,7 +7,8 @@ public class Crossfit extends Workout {
 
     @Override
     protected String Info() {
-        return "Кросфіт тренування!\tТривалість: "+getDuration()+"\tСередня вага штанги: "+avgWeightBarbell
-                +"\tКілокалорій: "+calorieConsumption(getWeight(), getDuration(),getAvgPulse());
+        return "Кросфіт тренування!\tТривалість в хв: "+getDuration()+"\tСередня вага штанги: "+avgWeightBarbell
+                +"\tКілокалорій: "+calorieConsumption(getWeight(), getDuration(),getAvgPulse())
+                +"\nВага спортсмена: "+getWeight()+"\tСередній пульс за тренування: "+getAvgPulse()+"\n";
     }
 }
